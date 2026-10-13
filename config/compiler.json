@@ -1,0 +1,42 @@
+{
+  "weights": {
+    "exact": 0.45,
+    "alias": 0.2,
+    "semantic": 0.2,
+    "role_alignment": 0.1,
+    "evidence_quality": 0.05
+  },
+  "requirement_weights": {
+    "gate": 5,
+    "must": 5,
+    "preferred": 2,
+    "responsibility": 1,
+    "soft": 0.25,
+    "ignore": 0
+  },
+  "support_gates": {
+    "direct": 1,
+    "alias": 0.9,
+    "text_review": 0.65,
+    "semantic_suggestion": 0.25,
+    "none": 0
+  },
+  "selection": {
+    "max_major_entries": 4,
+    "max_bullets_per_entry": 3,
+    "min_bullets_per_entry": 2,
+    "line_budget": 32,
+    "diminishing": 0.72,
+    "stop_gain": 0.05
+  },
+  "semantic": {
+    "enabled": true,
+    "mode": "lexical_overlap",
+    "suggestion_threshold": 0.34,
+    "suggestions_per_requirement": 3
+  },
+  "evidence_ceiling": {
+    "strong": 0.8,
+    "partial": 0.4
+  }
+}

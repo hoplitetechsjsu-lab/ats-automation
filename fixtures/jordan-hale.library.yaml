@@ -1,0 +1,438 @@
+profile:
+  name: Jordan Hale
+  location: Oakland, CA
+  email: jordan.hale@example.com
+  phone: "(555) 010-0142"
+  summary_claim_id: summary-jordan
+  links:
+    - label: GitHub
+      url: https://github.com/example-jordan-hale
+    - label: Portfolio
+      url: https://example.com/jordan-hale
+
+skills:
+  - id: typescript
+    canonical: TypeScript
+    aliases: []
+    category: programming_language
+    exact_only: false
+    ambiguous_aliases: []
+  - id: javascript
+    canonical: JavaScript
+    aliases: []
+    category: programming_language
+    exact_only: false
+    ambiguous_aliases: [js]
+  - id: java
+    canonical: Java
+    aliases: []
+    category: programming_language
+    exact_only: true
+    ambiguous_aliases: []
+  - id: python
+    canonical: Python
+    aliases: [Python 3]
+    category: programming_language
+    exact_only: false
+    ambiguous_aliases: []
+  - id: go
+    canonical: Go
+    aliases: [Golang]
+    category: programming_language
+    exact_only: true
+    ambiguous_aliases: [go]
+  - id: postgresql
+    canonical: PostgreSQL
+    aliases: [Postgres]
+    category: database
+    exact_only: false
+    ambiguous_aliases: []
+  - id: kubernetes
+    canonical: Kubernetes
+    aliases: [k8s]
+    category: infrastructure
+    exact_only: false
+    ambiguous_aliases: []
+  - id: testing
+    canonical: Testing
+    aliases: [automated testing, reliability testing, test automation]
+    category: practice
+    exact_only: false
+    ambiguous_aliases: []
+  - id: aws
+    canonical: AWS
+    aliases: [Amazon Web Services]
+    category: cloud
+    exact_only: false
+    ambiguous_aliases: []
+  - id: terraform
+    canonical: Terraform
+    aliases: []
+    category: infrastructure
+    exact_only: false
+    ambiguous_aliases: []
+  - id: kafka
+    canonical: Kafka
+    aliases: []
+    category: infrastructure
+    exact_only: false
+    ambiguous_aliases: []
+  - id: rust
+    canonical: Rust
+    aliases: []
+    category: programming_language
+    exact_only: false
+    ambiguous_aliases: []
+  - id: react
+    canonical: React
+    aliases: [React.js]
+    category: framework
+    exact_only: false
+    ambiguous_aliases: []
+  - id: scala
+    canonical: Scala
+    aliases: []
+    category: programming_language
+    exact_only: false
+    ambiguous_aliases: []
+
+entries:
+  - id: northwind
+    kind: experience
+    organization: Northwind Civic Labs
+    title: Software Engineer
+    location: Oakland, CA
+    dates: { start: 2023-06, end: 2025-08 }
+  - id: harbor
+    kind: experience
+    organization: Harbor and Pine
+    title: Junior Engineer
+    location: Sacramento, CA
+    dates: { start: 2021-09, end: 2023-05 }
+  - id: lumen
+    kind: project
+    organization: Lumen Queue
+    title: Open-source maintainer
+    location: Oakland, CA
+    dates: { start: 2024-01, end: null }
+  - id: trailmark
+    kind: project
+    organization: Trailmark
+    title: Builder
+    location: Oakland, CA
+    dates: { start: 2022-03, end: 2022-11 }
+  - id: paper
+    kind: project
+    organization: Independent study
+    title: Researcher
+    location: Oakland, CA
+    dates: { start: 2024-06, end: 2024-12 }
+  - id: ta-role
+    kind: leadership
+    organization: Redwood State University
+    title: Lab assistant
+    location: Arcata, CA
+    dates: { start: 2020-01, end: 2021-05 }
+  - id: redwood
+    kind: education
+    organization: Redwood State University
+    title: B.S. Computer Science
+    location: Arcata, CA
+    dates: { start: 2017-09, end: 2021-05 }
+
+claims:
+  - id: summary-jordan
+    parent_id: profile
+    kind: summary
+    text: "Software engineer who builds reliable TypeScript and Go services, with shipped work in PostgreSQL, Kubernetes, and automated testing."
+    human_authored: true
+    ownership: contributed
+    source: fixtures/jordan-hale.library.yaml#summary-jordan
+    dates: { start: 2021-09, end: null }
+    skills: [typescript, go, postgresql, kubernetes, testing]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 2
+    approved_variants: []
+
+  - id: elig-us
+    parent_id: profile
+    kind: eligibility
+    text: "Authorized to work in the United States."
+    human_authored: true
+    ownership: completed
+    source: fixtures/jordan-hale.library.yaml#elig-us
+    dates: { start: 2017-09, end: null }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: northwind-events
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Built a TypeScript service that recorded 12 million PostgreSQL events a day with idempotent writes."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#northwind-events
+    dates: { start: 2023-06, end: 2025-08 }
+    skills: [typescript, postgresql]
+    aliases_approved: []
+    metrics:
+      - value: "12 million"
+        unit: events/day
+        context: recorded volume
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 2
+    approved_variants: []
+
+  - id: northwind-reliability
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Designed reliability testing for the payments worker, including concurrent request replay."
+    human_authored: true
+    ownership: designed
+    source: fixtures/jordan-hale.library.yaml#northwind-reliability
+    dates: { start: 2023-06, end: 2025-08 }
+    skills: [testing]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 2
+    approved_variants: []
+
+  - id: northwind-go
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Built an internal Go service for log replay used during incident review."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#northwind-go
+    dates: { start: 2024-02, end: 2025-08 }
+    skills: [go]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants:
+      - id: shorter
+        text: "Built an internal Go service for incident log replay."
+        approved: true
+
+  - id: northwind-aws
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Operated the event worker on AWS with CloudWatch alarms and staged rollouts."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#northwind-aws
+    dates: { start: 2023-06, end: 2025-08 }
+    skills: [aws]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: harbor-python
+    parent_id: harbor
+    kind: experience_bullet
+    text: "Implemented Python 3 REST handlers for inventory adjustments."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#harbor-python
+    dates: { start: 2021-09, end: 2023-05 }
+    skills: [python]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: harbor-terraform
+    parent_id: harbor
+    kind: experience_bullet
+    text: "Evaluated Terraform modules for the inventory stack but did not adopt them."
+    human_authored: true
+    ownership: evaluated
+    source: fixtures/jordan-hale.library.yaml#harbor-terraform
+    dates: { start: 2022-01, end: 2022-04 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: context_only
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: harbor-no-k8s
+    parent_id: harbor
+    kind: experience_bullet
+    text: "This inventory service did not include Kubernetes."
+    human_authored: true
+    ownership: contributed
+    source: fixtures/jordan-hale.library.yaml#harbor-no-k8s
+    dates: { start: 2021-09, end: 2023-05 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: harbor-postgres-untagged
+    parent_id: harbor
+    kind: experience_bullet
+    text: "Wrote a migration note that mentioned PostgreSQL in the runbook."
+    human_authored: true
+    ownership: contributed
+    source: fixtures/jordan-hale.library.yaml#harbor-postgres-untagged
+    dates: { start: 2022-05, end: 2022-06 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: planned-rust
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Planned a future migration of the worker runtime to Rust."
+    human_authored: true
+    ownership: planned
+    source: fixtures/jordan-hale.library.yaml#planned-rust
+    dates: { start: 2025-06, end: null }
+    skills: [rust]
+    aliases_approved: []
+    metrics: []
+    evidence_level: planned
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: private-margin
+    parent_id: northwind
+    kind: experience_bullet
+    text: "Unpublished client margin of 42 percent for a private contract."
+    human_authored: true
+    ownership: contributed
+    source: fixtures/jordan-hale.library.yaml#private-margin
+    dates: { start: 2024-01, end: 2024-03 }
+    skills: []
+    aliases_approved: []
+    metrics:
+      - value: "42 percent"
+        unit: margin
+    evidence_level: direct
+    visibility: private
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: lumen-go
+    parent_id: lumen
+    kind: project_bullet
+    text: "Implemented a Go job queue with idempotency keys and bounded retries."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#lumen-go
+    dates: { start: 2024-01, end: null }
+    skills: [go]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: lumen-k8s
+    parent_id: lumen
+    kind: project_bullet
+    text: "Deployed the queue on Kubernetes with health checks and rolling restarts."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#lumen-k8s
+    dates: { start: 2024-06, end: null }
+    skills: [kubernetes]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: trailmark-react
+    parent_id: trailmark
+    kind: project_bullet
+    text: "Built a React and JavaScript trip planner with offline maps."
+    human_authored: true
+    ownership: integrated
+    source: fixtures/jordan-hale.library.yaml#trailmark-react
+    dates: { start: 2022-03, end: 2022-11 }
+    skills: [react, javascript]
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: paper-anomaly
+    parent_id: paper
+    kind: project_bullet
+    text: "Researched anomaly detection for sensor streams and wrote the evaluation."
+    human_authored: true
+    ownership: researched
+    source: fixtures/jordan-hale.library.yaml#paper-anomaly
+    dates: { start: 2024-06, end: 2024-12 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: ta-lab
+    parent_id: ta-role
+    kind: leadership_bullet
+    text: "Led a weekly lab section, graded assignments, and was ready to go deeper on debugging."
+    human_authored: true
+    ownership: led
+    source: fixtures/jordan-hale.library.yaml#ta-lab
+    dates: { start: 2020-01, end: 2021-05 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 1
+    approved_variants: []
+
+  - id: edu-bs
+    parent_id: redwood
+    kind: education
+    text: "B.S. in Computer Science, Redwood State University"
+    human_authored: true
+    ownership: completed
+    source: fixtures/jordan-hale.library.yaml#edu-bs
+    dates: { start: 2017-09, end: 2021-05 }
+    skills: []
+    aliases_approved: []
+    metrics: []
+    evidence_level: direct
+    visibility: public
+    line_cost_estimate: 2
+    approved_variants: []

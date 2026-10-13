@@ -1,0 +1,32 @@
+Northline Systems
+Senior Software Engineer, Platform
+
+Northline builds civic data infrastructure for public records. The company has been around since 2014 and the team sits in Sacramento.
+
+What you'll do
+- Design services that keep public records available during deploys
+- Own reliability testing for request pipelines
+- Collaborate with partner teams on rollout plans
+
+What you'll need
+- Experience with Go and PostgreSQL
+- Hands-on Kubernetes and container deployments
+- Automated testing, including reliability testing
+- TypeScript or Python for service integrations
+- Bachelor's degree in Computer Science or a related field
+- Authorized to work in the United States
+
+Preferred
+- AWS experience
+- Familiarity with Terraform
+- Exposure to Kafka
+
+Soft skills
+- Clear communication and a collaborative style
+
+Benefits
+- Dental, vision, and 401(k) matching
+- Equal opportunity employer
+
+How to apply
+- Email a resume as PDF. Please do not include a photo.
